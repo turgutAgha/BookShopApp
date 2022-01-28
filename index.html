@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Book Shop Project</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>BOOK SHOP</header>
+    <div class='row'>
+        <div class='column left' style="background-color: #e3e2da;" id="categories">
+            <h2>Categories</h2>
+            <input type="checkbox" id="ch-0" class='checkbox' value="All" onchange="loadApi()" checked>
+            <label for="ch-0">All</label><br>
+        </div>
+        <div class='column middle' style="background-color: #e3e2da;">
+            <div id='books'>
+
+            </div>
+        </div>
+        <div class='column right' style="background-color: #e3e2da; text-align: center;">
+            <h2 >Cart</h2>
+            <table id="cart">
+                <thead>
+                    <th style="width:50%">Title</th><th style="width:22%">Price</th><th style="width:22%">Count</th><th></th>
+                </thead>
+            </table>
+            <h2 id="totalCost"></h2>
+            <button id='clear-cart'>Clear Cart</button>
+            <button id='buy'>Buy</button>
+        
+        </div>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>
